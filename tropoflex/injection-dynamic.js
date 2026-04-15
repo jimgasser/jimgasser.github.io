@@ -101,8 +101,8 @@ async function getEquineBreeds() {
         option.value = breed.BreedID;
         option.text = breed.Breed;            
         myBreeds.add(option);
-    myBreeds.add(new Option("Other", "Other"));
     });
+    myBreeds.add(new Option("Other", "Other"));
 }
 
 
