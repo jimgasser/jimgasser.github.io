@@ -1,0 +1,127 @@
+const myVet = document.getElementById("veterinarian");
+const myOwner = document.getElementById("owner");
+const myAnimal = document.getElementById("animal");
+const myAnimalTypes = document.querySelectorAll('input[name="q19_animalType"]');
+const myGender = document.getElementById("gender");
+const myTissueType = document.getElementById("tissueType");
+const myDisciplines = document.getElementById("discipline");
+
+const paFlowUrlVets = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/d46af86d45054d7dab80b0f695c0177e/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=i_QPUg80RYYFshg0tOjPED_jbrv9CAfoN5y4zk39xks';
+const paFlowUrlOwners = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/08a3dddda77c4862b22f98e7a6b7d538/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=97vClsSpKD8yuIhcSjfOWCpWTKmP_oSou0UWQBoRX4w';
+const paFlowUrlAnimals = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/84edcf11f2694dbaa19fd51c193f4cd3/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=pOMR8KdA8_5wLcSZTQ7iPHWneNwLo-XSm_fZ6_-h1go';
+const paFlowUrlInjectionSites = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/b255145e092645f0a7527293815a1b28/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=03QRl8DfIAJ76GbiL1An2APBseSO3-4wTMC8JGc4Zg4';
+const paFlowUrlEquineDisciplines = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/ed1265c18cc24c1193f3d844deb1d653/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=KEelMnGcszfkEXii-J2MoNuhsfPgqEfzOjq9uRh1Li8';
+
+var myAnimalType = "";
+
+async function getSharePointListData(thisUrl, thisBody) {
+    try {
+        const response = await fetch(thisUrl, {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify(thisBody)
+        });        
+        if (!response.ok) {
+            throw new Error(`Error: ${response.status}`);
+        }
+        return await response.json();
+    } catch (error) {
+        console.error("Failed to fetch list:", error);
+    }
+}
+
+async function getVets() {
+    const vetData = await getSharePointListData(paFlowUrlVets);
+    vetData.forEach(vet => {
+        let option = document.createElement('option');
+        option.value = vet.VetID;
+        option.text = vet.FullName_LF;            
+        myVet.add(option);
+    });
+}
+
+async function getOwners() {
+    const ownerData = await getSharePointListData(paFlowUrlOwners);
+    ownerData.forEach(owner => {
+        let option = document.createElement('option');
+        option.value = owner.OwnerID;
+        option.text = owner.FullName_LF;            
+        myOwner.add(option);
+    });
+}
+
+async function getAnimals(element, ID) {
+    myAnimal.innerHTML = "";
+    myAnimal.add(new Option("Please Select", ""));
+    myAnimal.add(new Option("(New Animal)", "(New Animal)"));
+    const animalData = await getSharePointListData(paFlowUrlAnimals, {"element": element, "id": ID});
+    animalData.forEach(animal => {
+        let option = document.createElement('option');
+        option.value = animal.HorseID;
+        option.text = animal.HorseName; 
+        option.setAttribute("data-animal", animal.Animal.Value);
+        myAnimal.add(option);
+    });
+}
+
+async function getInjectionSites(tissueType, animal) {
+    for (let i = 1; i <= 8; i++) {
+        document.getElementById('injectionSite' + i).innerHTML = "";
+        document.getElementById('injectionSite' + i).add(new Option("Please Select", ""));
+        document.getElementById('dosage' + i).value = null;
+    }
+    const sites = await getSharePointListData(paFlowUrlInjectionSites, {"tissueType": tissueType, "animal": animal});
+    sites.forEach(site => {
+        for (let i = 1; i < 9; i++) {
+            document.getElementById('injectionSite' + i).add(new Option(site.InjectionSite, site.InjectionSiteID));
+        }        
+    });    
+}
+
+async function getDisciplines() {
+    const ownerData = await getSharePointListData(paFlowUrlEquineDisciplines);
+    disciplineData.forEach(discipline => {
+        let option = document.createElement('option');
+        option.value = discipline.DisciplineID;
+        option.text = discipline.Discipline;            
+        myOwner.add(option);
+    });
+}
+
+myVet.addEventListener('change', (event) => {
+    getAnimals('vet', parseInt(myVet.value));
+})
+
+myOwner.addEventListener('change', (event) => {
+    getAnimals('owner', parseInt(myOwner.value));
+})
+
+myAnimal.addEventListener('change', (event) => {
+    const selectedAnimal = event.target.options[event.target.selectedIndex];
+    myAnimalType = selectedAnimal.dataset.animal ?? 'Equine';
+})
+
+myTissueType.addEventListener('change', (event) => {
+    getInjectionSites(myTissueType.value, myAnimalType);
+})
+
+myAnimalTypes.forEach(myAnimalType => {
+    myAnimalType.addEventListener('change', function(event) {
+        myAnimalType = event.target.value;
+        myGender.innerHTML = "";
+        myGender.add(new Option("Please Select", ""));
+        if (myAnimalType === 'Equine') {
+            myGender.add(new Option("Gelding", "Gelding"));
+            myGender.add(new Option("Mare", "Mare"));
+            myGender.add(new Option("Stallion", "Stallion"));
+        } else {
+            myGender.add(new Option("Female", "Female"));
+            myGender.add(new Option("Male", "Male"));
+        }
+        getInjectionSites(myTissueType.value, myAnimalType);
+    });
+});
+
+getVets();
+getOwners();
+getDisciplines();
