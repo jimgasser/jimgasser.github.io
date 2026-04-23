@@ -2,11 +2,6 @@
 const myVet = document.getElementById("input_4");
 const myOwner = document.getElementById("input_5");
 const myAnimal = document.getElementById("input_17");
-const myAnimalTypes = document.querySelectorAll('input[name="q19_animalType"]');
-const myGender = document.getElementById("input_50");
-const myBreeds = document.getElementById("input_21");
-const myDisciplines = document.getElementById("input_77");
-const myTissueType = document.getElementById("input_31");
 
 const paFlowUrlVets = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/d46af86d45054d7dab80b0f695c0177e/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=i_QPUg80RYYFshg0tOjPED_jbrv9CAfoN5y4zk39xks';
 const paFlowUrlOwners = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/08a3dddda77c4862b22f98e7a6b7d538/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=97vClsSpKD8yuIhcSjfOWCpWTKmP_oSou0UWQBoRX4w';
