@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TropoFlex&trade; Injection Form</title>
+    <script src="injection-dynamic.js" defer></script>
+</head>
+<body>
+
+<script>window.enableEventObserver=true</script>
+<script>window.enableRenameUploadFile=false</script>
+<script>window.enableDateFieldSelectInputs=false</script>
+<script>window.CDN="https://cdn.jotfor.ms/"</script>
+<script>window.umdRootPath="https://cdn.jotfor.ms/s/umd/5b5b986d429/"</script>
+<script>window.staticRootPath="https://cdn.jotfor.ms/s/static/02223ee365c/"</script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/static/prototype.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/static/jotform.forms.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/js/vendor/maskedinput_5.0.9.min.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/js/punycode-1.4.1.min.js" type="text/javascript" defer></script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/js/vendor/imageinfo.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/file-uploader/fileuploader.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/js/vendor/smoothscroll.min.js" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/s/static/02223ee365c/js/errorNavigation.js" type="text/javascript"></script>
+<script type="text/javascript">	JotForm.newDefaultTheme = true;
+	JotForm.extendsNewTheme = false;
+	// {GPT_APP_SCRIPT}
+	JotForm.singleProduct = false;
+	JotForm.newPaymentUIForNewCreatedForms = true;
+	JotForm.texts = {"confirmEmail":"E-mail does not match","pleaseWait":"Please wait...","validateEmail":"You need to validate this e-mail","confirmClearForm":"Are you sure you want to clear the form","lessThan":"Your score should be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","required":"This field is required.","requireOne":"At least one field required.","requireEveryRow":"Every row is required.","requireEveryCell":"Every cell is required.","email":"Enter a valid e-mail address","alphabetic":"This field can only contain letters","numeric":"This field can only contain numeric values","alphanumeric":"This field can only contain letters and numbers.","cyrillic":"This field can only contain cyrillic characters","url":"This field can only contain a valid URL","currency":"This field can only contain currency values.","fillMask":"Field value must fill mask.","uploadExtensions":"You can only upload following files:","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","gradingScoreError":"Score total should only be less than or equal to","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","maxDigitsError":"The maximum digits allowed is","minCharactersError":"The number of characters should not be less than the minimum value:","maxCharactersError":"The number of characters should not be more than the maximum value:","freeEmailError":"Free email accounts are not allowed","minSelectionsError":"The minimum required number of selections is ","maxSelectionsError":"The maximum number of selections allowed is ","pastDatesDisallowed":"Date must not be in the past.","dateLimited":"This date is unavailable.","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","ageVerificationError":"You must be older than {minAge} years old to submit this form.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","chooseAFile_infoMessage":"Choose a file","maxFileSize_infoMessage":"Max. file size","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","ccInvalidNumber":"Credit Card Number is invalid.","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingProduct":"Please select at least one product.","ccMissingDonation":"Please enter numeric values for donation amount.","disallowDecimals":"Please enter a whole number.","restrictedDomain":"This domain is not allowed","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","requiredLegend":"All fields marked with * are required and must be filled.","geoPermissionTitle":"Permission Denied","geoPermissionDesc":"Check your browser's privacy settings.","geoNotAvailableTitle":"Position Unavailable","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoTimeoutTitle":"Timeout","geoTimeoutDesc":"Please check your internet connection and try again.","selectedTime":"Selected Time","formerSelectedTime":"Former Time","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","confirmSelection":"Confirm Selection","noSlotsAvailable":"No slots available","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","multipleError":"There are {count} errors on this page. Please correct them before moving on.","oneError":"There is {count} error on this page. Please correct it before moving on.","doneMessage":"Well done! All errors are fixed.","invalidTime":"Enter a valid time","doneButton":"Done","reviewSubmitText":"Review and Submit","nextButtonText":"Next","prevButtonText":"Previous","seeErrorsButton":"See Errors","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","soldOut":"Sold Out","justSoldOut":"Just Sold Out","selectionSoldOut":"Selection Sold Out","subProductItemsLeft":"({count} items left)","startButtonText":"START","submitButtonText":"Submit","submissionLimit":"Sorry! Only one entry is allowed. <br> Multiple submissions are disabled for this form.","reviewBackText":"Back to Form","seeAllText":"See All","progressMiddleText":"of","fieldError":"field has an error.","error":"Error"};
+	JotForm.newPaymentUI = true;
+	JotForm.originalLanguage = "en";
+	JotForm.isFormViewTrackingAllowed = true;
+	JotForm.replaceTagTest = true;
+	JotForm.activeRedirect = "thanktext";
+	JotForm.uploadServerURL = "https://upload.jotform.com/upload";
+
+   JotForm.setConditions([{"action":[{"id":"action_1773891158459","visibility":"Show","isError":false,"field":"4"}],"id":"1773891170970","index":"0","link":"Any","priority":"0","terms":[{"id":"term_1773891158459","field":"3","operator":"equals","value":"Veterinarian","isError":false}],"type":"field"},{"action":[{"id":"action_1773891177550","visibility":"Show","isError":false,"field":"5"}],"id":"1773891188142","index":"1","link":"Any","priority":"1","terms":[{"id":"term_1773891177550","field":"3","operator":"equals","value":"Owner","isError":false}],"type":"field"},{"action":[{"id":"action_0_1773891426745","visibility":"ShowMultiple","isError":false,"fields":["40","6","7","8","9","11","12","14","15"]}],"id":"1773891397312","index":"2","link":"Any","priority":"2","terms":[{"id":"term_0_1773891426745","field":"5","operator":"equals","value":"(New Owner)","isError":false}],"type":"field"},{"action":[{"id":"action_0_1773892212173","visibility":"ShowMultiple","isError":false,"fields":["41","19","18","23","50"]}],"id":"1773891518654","index":"3","link":"Any","priority":"3","terms":[{"id":"term_0_1773892212173","field":"17","operator":"equals","value":"(New Animal)","isError":false}],"type":"field"},{"action":[{"id":"action_0_1776271012365","visibility":"ShowMultiple","isError":false,"fields":["21","77"]}],"id":"1773891570176","index":"4","link":"All","priority":"4","terms":[{"id":"term_0_1776271012365","field":"19","operator":"equals","value":"Equine","isError":false},{"id":"term_1_1776271012365","field":"17","operator":"equals","value":"(New Animal)","isError":false}],"type":"field"},{"action":[{"id":"action_1773891605273","visibility":"Show","isError":false,"field":"22"}],"id":"1773891614758","index":"5","link":"Any","priority":"5","terms":[{"id":"term_1773891605273","field":"19","operator":"equals","value":"Canine","isError":false}],"type":"field"},{"action":[{"id":"action_1773891726554","visibility":"Show","isError":false,"field":"24"}],"id":"1773891736857","index":"6","link":"Any","priority":"6","terms":[{"id":"term_1773891726554","field":"21","operator":"equals","value":"Other","isError":false}],"type":"field"},{"action":[{"id":"action_1773891810162","visibility":"Show","isError":false,"field":"32"}],"id":"1773891830010","index":"7","link":"Any","priority":"7","terms":[{"id":"term_1773891810162","field":"31","operator":"equals","value":"Joint","isError":false}],"type":"field"},{"action":[{"id":"action_1773891833947","visibility":"Show","isError":false,"field":"34"}],"id":"1773891847791","index":"8","link":"Any","priority":"8","terms":[{"id":"term_1773891833947","field":"31","operator":"equals","value":"Tendon","isError":false}],"type":"field"},{"action":[{"id":"action_1773892229058","visibility":"Show","isError":false,"field":"49"}],"id":"1773892240117","index":"9","link":"Any","priority":"9","terms":[{"id":"term_1773892229058","field":"48","operator":"equals","value":"Yes","isError":false}],"type":"field"}]);	JotForm.clearFieldOnHide="disable";
+	JotForm.submitError="jumpToFirstError";
+	JotForm.isFullSource = true;
+
+	JotForm.init(function(){
+	/*INIT-START*/
+if (window.JotForm && JotForm.accessible) $('input_6').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_7').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_8').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_9').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_12').setAttribute('tabindex',0);
+      JotForm.setPhoneMaskingValidator( 'input_14_full', '\u0028\u0023\u0023\u0023\u0029 \u0023\u0023\u0023\u002d\u0023\u0023\u0023\u0023' );
+if (window.JotForm && JotForm.accessible) $('input_18').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_24').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_22').setAttribute('tabindex',0);
+
+ JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ if (!JotForm.calenderViewMonths) JotForm.calenderViewMonths = {};  JotForm.calenderViewMonths[26] = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+ if (!JotForm.calenderViewDays) JotForm.calenderViewDays = {};  JotForm.calenderViewDays[26] = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
+ JotForm.calendarOther = {"today":"Today"};
+ var languageOptions = document.querySelectorAll('#langList li'); 
+ for(var langIndex = 0; langIndex < languageOptions.length; langIndex++) { 
+   languageOptions[langIndex].on('click', function(e) { setTimeout(function(){ JotForm.setCalendar("26", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); }, 0); });
+ } 
+ JotForm.onTranslationsFetch(function() { JotForm.setCalendar("26", false, {"days":{"monday":true,"tuesday":true,"wednesday":true,"thursday":true,"friday":true,"saturday":true,"sunday":true},"future":true,"past":true,"custom":false,"ranges":false,"start":"","end":"","countSelectedDaysOnly":false}); });
+if (window.JotForm && JotForm.accessible) $('input_35').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_36').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_37').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_58').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_61').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_63').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_65').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_67').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_69').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_71').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_73').setAttribute('tabindex',0);
+if (window.JotForm && JotForm.accessible) $('input_49').setAttribute('tabindex',0);
+      JotForm.alterTexts({"ageVerificationError":"You must be older than {minAge} years old to submit this form.","alphabetic":"This field can only contain letters","alphanumeric":"This field can only contain letters and numbers.","cancelAppointment":"Cancel Appointment","cancelSelection":"Cancel Selection","ccDonationMinLimitError":"Minimum amount is {minAmount} {currency}","ccInvalidCVC":"CVC number is invalid.","ccInvalidExpireDate":"Expire date is invalid.","ccInvalidExpireMonth":"Expiration month is invalid.","ccInvalidExpireYear":"Expiration year is invalid.","ccInvalidNumber":"Credit Card Number is invalid.","ccMissingDetails":"Please fill up the credit card details.","ccMissingDonation":"Please enter numeric values for donation amount.","ccMissingProduct":"Please select at least one product.","characterLimitError":"Too many Characters.  The limit is","characterMinLimitError":"Too few characters. The minimum is","chooseAFile_infoMessage":"Choose a file","confirmClearForm":"Are you sure you want to clear the form","confirmEmail":"E-mail does not match","confirmSelection":"Confirm Selection","currency":"This field can only contain currency values.","cyrillic":"This field can only contain cyrillic characters","dateInvalid":"This date is not valid. The date format is {format}","dateInvalidSeparate":"This date is not valid. Enter a valid {element}.","dateLimited":"This date is unavailable.","disallowDecimals":"Please enter a whole number.","doneButton":"Done","doneMessage":"Well done! All errors are fixed.","dragAndDropFilesHere_infoMessage":"Drag and drop files here","email":"Enter a valid e-mail address","error":"Error","fieldError":"field has an error.","fillMask":"Field value must fill mask.","formerSelectedTime":"Former Time","freeEmailError":"Free email accounts are not allowed","generalError":"There are errors on the form. Please fix them before continuing.","generalPageError":"There are errors on this page. Please fix them before continuing.","geoNotAvailableDesc":"Location provider not available. Please enter the address manually.","geoNotAvailableTitle":"Position Unavailable","geoPermissionDesc":"Check your browser's privacy settings.","geoPermissionTitle":"Permission Denied","geoTimeoutDesc":"Please check your internet connection and try again.","geoTimeoutTitle":"Timeout","gradingScoreError":"Score total should only be less than or equal to","incompleteFields":"There are incomplete required fields. Please complete them.","inputCarretErrorA":"Input should not be less than the minimum value:","inputCarretErrorB":"Input should not be greater than the maximum value:","invalidTime":"Enter a valid time","justSoldOut":"Just Sold Out","lessThan":"Your score should be less than or equal to","maxCharactersError":"The number of characters should not be more than the maximum value:","maxDigitsError":"The maximum digits allowed is","maxFileSize_infoMessage":"Max. file size","maxSelectionsError":"The maximum number of selections allowed is ","minCharactersError":"The number of characters should not be less than the minimum value:","minSelectionsError":"The minimum required number of selections is ","multipleError":"There are {count} errors on this page. Please correct them before moving on.","multipleFileUploads_emptyError":"{file} is empty, please select files again without it.","multipleFileUploads_fileLimitError":"Only {fileLimit} file uploads allowed.","multipleFileUploads_minSizeError":"{file} is too small, minimum file size is {minSizeLimit}.","multipleFileUploads_onLeave":"The files are being uploaded, if you leave now the upload will be cancelled.","multipleFileUploads_sizeError":"{file} is too large, maximum file size is {sizeLimit}.","multipleFileUploads_typeError":"{file} has invalid extension. Only {extensions} are allowed.","multipleFileUploads_uploadFailed":"File upload failed, please remove it and upload the file again.","nextButtonText":"Next","noSlotsAvailable":"No slots available","notEnoughStock":"Not enough stock for the current selection","notEnoughStock_remainedItems":"Not enough stock for the current selection ({count} items left)","noUploadExtensions":"File has no extension file type (e.g. .txt, .png, .jpeg)","numeric":"This field can only contain numeric values","oneError":"There is {count} error on this page. Please correct it before moving on.","pastDatesDisallowed":"Date must not be in the past.","pleaseWait":"Please wait...","prevButtonText":"Previous","progressMiddleText":"of","required":"This field is required.","requiredLegend":"All fields marked with * are required and must be filled.","requireEveryCell":"Every cell is required.","requireEveryRow":"Every row is required.","requireOne":"At least one field required.","restrictedDomain":"This domain is not allowed","reviewBackText":"Back to Form","reviewSubmitText":"Review and Submit","seeAllText":"See All","seeErrorsButton":"See Errors","selectedTime":"Selected Time","selectionSoldOut":"Selection Sold Out","slotUnavailable":"{time} on {date} has been selected is unavailable. Please select another slot.","soldOut":"Sold Out","startButtonText":"START","submissionLimit":"Sorry! Only one entry is allowed. &lt;br&gt; Multiple submissions are disabled for this form.","submitButtonText":"Submit","subProductItemsLeft":"({count} items left)","uploadExtensions":"You can only upload following files:","uploadFilesize":"File size cannot be bigger than:","uploadFilesizemin":"File size cannot be smaller than:","url":"This field can only contain a valid URL","validateEmail":"You need to validate this e-mail","wordLimitError":"Too many words. The limit is","wordMinLimitError":"Too few words.  The minimum is"});
+      setTimeout(function() {
+          JotForm.initMultipleUploads();
+      }, 2);
+	/*INIT-END*/
+	});
+
+   setTimeout(function() {
+JotForm.paymentExtrasOnTheFly([null,{"name":"heading","qid":"1","text":"TropoFlex™ Injection Form","type":"control_head"},{"name":"submit2","qid":"2","text":"Submit","type":"control_button"},{"description":"","name":"searchBy","qid":"3","text":"Search by:","type":"control_radio"},{"description":"","name":"veterinarian","qid":"4","subLabel":"","text":"Veterinarian:","type":"control_dropdown"},{"description":"","name":"owner","qid":"5","subLabel":"","text":"Owner:","type":"control_dropdown"},{"description":"","name":"newOwnerName","qid":"6","subLabel":"","text":"New owner name:","type":"control_textbox"},{"description":"","name":"newOwnerAddress1","qid":"7","subLabel":"","text":"Address 1:","type":"control_textbox"},{"description":"","name":"newOwnerAddress2","qid":"8","subLabel":"","text":"Address 2:","type":"control_textbox"},{"description":"","name":"newOwnerCity","qid":"9","subLabel":"","text":"City:","type":"control_textbox"},null,{"description":"","name":"newOwnerState","qid":"11","subLabel":"","text":"State:","type":"control_dropdown"},{"description":"","name":"newOwnerZIP","qid":"12","subLabel":"","text":"ZIP:","type":"control_textbox"},null,{"description":"","name":"newOwnerPhone","qid":"14","text":"Phone:","type":"control_phone"},{"description":"","name":"newOwnerEmail","qid":"15","subLabel":"example@example.com","text":"Email:","type":"control_email"},null,{"description":"","name":"animalName","qid":"17","subLabel":"","text":"Animal name:","type":"control_dropdown"},{"description":"","name":"newAnimalName","qid":"18","subLabel":"","text":"New animal name:","type":"control_textbox"},{"description":"","name":"animalType","qid":"19","text":"Animal type:","type":"control_radio"},null,{"description":"","name":"newEquineBreed","qid":"21","subLabel":"","text":"Equine breed:","type":"control_dropdown"},{"description":"","name":"newCanineBreed","qid":"22","subLabel":"","text":"Canine breed:","type":"control_textbox"},{"description":"","name":"newAnimalAge","qid":"23","subLabel":"","text":"Age:","type":"control_number"},{"description":"","name":"newOtherEquineBreed","qid":"24","subLabel":"","text":"Other equine breed:","type":"control_textbox"},null,{"description":"","name":"injectionDate","qid":"26","text":"Injection date:","type":"control_datetime"},null,{"description":"","name":"isNewInjection","qid":"28","subLabel":"","text":"Is this a new injection?","type":"control_dropdown"},null,{"name":"input30","qid":"30","text":"Pre-injection observation\r\nEnter any observational data gathered prior to the TropoFlex™ injection. You may also upload up to 25 MB of photos, videos, PDFs, or other documents.","type":"control_text"},{"description":"","name":"tissueType","qid":"31","subLabel":"","text":"Tissue type:","type":"control_dropdown"},{"description":"","name":"lamenessScore","qid":"32","subLabel":"","text":"Lameness score:","type":"control_dropdown"},null,{"description":"","name":"inflammationPercentage","qid":"34","subLabel":"","text":"Inflammation %:","type":"control_dropdown"},{"description":"","mde":"No","name":"preInjectionObservation","qid":"35","subLabel":"","text":"Observation:","type":"control_textarea","wysiwyg":"Disable"},{"description":"","mde":"No","name":"diagnosis","qid":"36","subLabel":"","text":"Diagnosis:","type":"control_textarea","wysiwyg":"Disable"},{"description":"","mde":"No","name":"treatment","qid":"37","subLabel":"","text":"Treatment:","type":"control_textarea","wysiwyg":"Disable"},{"description":"","name":"imagingTypes","qid":"38","text":"Imaging type(s):","type":"control_checkbox"},null,{"name":"input40","qid":"40","text":"New owner information","type":"control_text"},{"name":"input41","qid":"41","text":"New animal information","type":"control_text"},{"description":"","name":"fileUploads","qid":"42","subLabel":"Maximum 25 MB for all uploaded files","text":"File upload(s):","type":"control_fileupload"},{"name":"input43","qid":"43","text":"Injection detail\r\nRecord the injection sites and dosages (in mL) of TropoFlex™ administered in each site.","type":"control_text"},null,{"description":"","name":"painMedication","qid":"45","subLabel":"","text":"Pain medication:","type":"control_dropdown"},{"description":"","name":"topical","qid":"46","subLabel":"","text":"Topical:","type":"control_dropdown"},{"description":"","name":"wasThere","qid":"47","subLabel":"","text":"Was there an adverse reaction?","type":"control_dropdown"},{"description":"","name":"hasPostinjectionObservation","qid":"48","subLabel":"","text":"Was there a post-injection observation?","type":"control_dropdown"},{"description":"","mde":"No","name":"postInjectionObservation","qid":"49","subLabel":"","text":"Observation:","type":"control_textarea","wysiwyg":"Disable"},{"description":"","name":"gender","qid":"50","subLabel":"","text":"Gender:","type":"control_dropdown"},{"name":"input51","qid":"51","text":"Search for animal by veterinarian or owner\r\nIf an owner and\u002For animal isn't listed, you may enter them here with as much data as you have available.","type":"control_text"},{"name":"divider","qid":"52","text":"Divider","type":"control_divider"},{"name":"divider53","qid":"53","text":"Divider","type":"control_divider"},{"description":"","name":"injectionSite1","qid":"54","subLabel":"","text":"Injection site 1","type":"control_dropdown"},null,null,null,{"description":"","name":"dosage1","qid":"58","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"name":"input59","qid":"59","text":"Enter up to 8 injection sites and the dosage of TropoFlex™ administered.","type":"control_text"},{"description":"","name":"injectionSite2","qid":"60","subLabel":"","text":"Injection site 2","type":"control_dropdown"},{"description":"","name":"dosage2","qid":"61","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"description":"","name":"injectionSite3","qid":"62","subLabel":"","text":"Injection site 3","type":"control_dropdown"},{"description":"","name":"dosage3","qid":"63","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"description":"","name":"injectionSite4","qid":"64","subLabel":"","text":"Injection site 4","type":"control_dropdown"},{"description":"","name":"dosage4","qid":"65","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"description":"","name":"injectionSite5","qid":"66","subLabel":"","text":"Injection site 5","type":"control_dropdown"},{"description":"","name":"dosage5","qid":"67","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"description":"","name":"injectionSite6","qid":"68","subLabel":"","text":"Injection site 6","type":"control_dropdown"},{"description":"","name":"dosage6","qid":"69","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"description":"","name":"injectionSite7","qid":"70","subLabel":"","text":"Injection site 7","type":"control_dropdown"},{"description":"","name":"dosage7","qid":"71","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"description":"","name":"injectionSite8","qid":"72","subLabel":"","text":"Injection site 8","type":"control_dropdown"},{"description":"","name":"dosage8","qid":"73","subLabel":"","text":"Dosage (mL)","type":"control_textbox"},{"name":"input74","qid":"74","text":"Post-injection observation","type":"control_text"},null,{"name":"divider76","qid":"76","text":"Divider","type":"control_divider"},{"description":"","name":"newEquineDisciplines","qid":"77","subLabel":"","text":"Equine discipline(s):","type":"control_dropdown"}]);}, 20); 
+</script>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/stylebuilder/static/form-common.css?v=72e4d77
+"/>
+<style type="text/css">@media print{*{-webkit-print-color-adjust: exact !important;color-adjust: exact !important;}.form-section{display:inline!important}.form-pagebreak{display:none!important}.form-section-closed{height:auto!important}.page-section{position:initial!important}}</style>
+<link id="custom-font" type="text/css" rel="stylesheet" href="//cdn.jotfor.ms/fonts/?family=Inter" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/5e6b428acc8c4e222d1beb91.css?v=4.1.63300"/>
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/s/static/02223ee365c/css/styles/payment/payment_styles.css?4.1.63300" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/s/static/02223ee365c/css/styles/payment/payment_feature.css?4.1.63300" />
+<style type="text/css" id="form-designer-style">
+    /* Injected CSS Code */
+/*PREFERENCES STYLE*/
+    .form-all {
+      font-family: Inter, sans-serif;
+    }
+  
+    .form-label.form-label-auto {
+      
+    display: inline-block;
+    float: left;
+    text-align: left;
+  
+    }
+  
+    .form-line {
+      margin-top: 12px;
+      margin-bottom: 12px;
+    }
+  
+    .form-all {
+      max-width: 752px;
+      width: 100%;
+    }
+  
+    .form-label.form-label-left,
+    .form-label.form-label-right,
+    .form-label.form-label-left.form-label-auto,
+    .form-label.form-label-right.form-label-auto {
+      width: 230px;
+    }
+  
+    .form-all {
+      font-size: 16px
+    }
+  
+  .supernova {
+    background-color: #f3f3fe;
+  }
+  .supernova body {
+    background: transparent;
+  }
+  
+    .supernova .form-all, .form-all {
+      background-color: #ffffff;
+    }
+  
+    .form-all {
+      color: #2c3345;
+    }
+    .form-header-group .form-header {
+      color: #2c3345;
+    }
+    .form-header-group .form-subHeader {
+      color: #2c3345;
+    }
+    .form-label-top,
+    .form-label-left,
+    .form-label-right,
+    .form-html,
+    .form-checkbox-item label,
+    .form-radio-item label,
+    span.FITB .qb-checkbox-label,
+    span.FITB .qb-radiobox-label,
+    span.FITB .form-radio label,
+    span.FITB .form-checkbox label,
+    [data-blotid][data-type=checkbox] [data-labelid],
+    [data-blotid][data-type=radiobox] [data-labelid],
+    span.FITB-inptCont[data-type=checkbox] label,
+    span.FITB-inptCont[data-type=radiobox] label {
+      color: #2c3345;
+    }
+    .form-sub-label {
+      color: #464d5f;
+    }
+  
+    .form-textbox,
+    .form-textarea,
+    .form-dropdown,
+    .form-radio-other-input,
+    .form-checkbox-other-input,
+    .form-captcha input,
+    .form-spinner input {
+      background-color: #ffffff;
+    }
+  
+    .form-line-error {
+      overflow: hidden;
+      transition: none;
+      background-color: #ffd6d6;
+    }
+
+    .form-line-error .form-error-message {
+      background-color: #DC2626;
+      clear: both;
+      float: none;
+    }
+
+    .form-line-error .form-error-arrow {
+      border-bottom-color: #FF3200;
+    }
+
+    .form-line-error input:not(#coupon-input),
+    .form-line-error textarea,
+    .form-line-error .form-validation-error {
+      border: 1px solid #c61515;
+      box-shadow: 0 0 3px #c61515;
+    }
+   
+      
+    .supernova {
+      background-repeat: no-repeat;
+      background-size:cover;
+      background-attachment: fixed;
+      background-position: center top;
+    }
+
+      .supernova {
+        background-image: none;
+      }
+    
+      .form-all {
+        background-image: none;
+      }
+    /*PREFERENCES STYLE*//*__INSPECT_SEPERATOR__*/
+.form-label.form-label-auto {
+        
+        display: inline-block;
+        float: left;
+        text-align: left;
+      
+      }
+    /* Injected CSS Code */
+</style>
+
+<form class="jotform-form" onsubmit="return typeof testSubmitFunction !== 'undefined' && testSubmitFunction();" action="https://submit.jotform.com/submit/260768904551060" method="post" enctype="multipart/form-data" name="form_260768904551060" id="260768904551060" accept-charset="utf-8" autocomplete="on"><input type="hidden" name="formID" value="260768904551060" /><input type="hidden" id="JWTContainer" value="" /><input type="hidden" id="cardinalOrderNumber" value="" /><input type="hidden" id="jsExecutionTracker" name="jsExecutionTracker" value="build-date-1776274684986" /><input type="hidden" id="submitSource" name="submitSource" value="unknown" /><input type="hidden" id="submitDate" name="submitDate" value="undefined" /><input type="hidden" id="buildDate" name="buildDate" value="1776274684986" /><input type="hidden" name="uploadServerUrl" value="https://upload.jotform.com/upload" /><input type="hidden" name="eventObserver" value="1" />
+  <div role="main" class="form-all">
+    <ul class="form-section page-section" role="presentation">
+      <li id="cid_1" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group  header-large">
+          <div class="header-text httal htvam">
+            <h1 id="header_1" class="form-header" data-component="header">TropoFlex™ Injection Form</h1>
+            <div id="subHeader_1" class="form-subHeader">Record your TropoFlex™ injections for equines or canines in order for us to track usage, efficacy, and observations.</div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_51">
+        <div id="cid_51" class="form-input-wide" data-layout="full">
+          <div id="text_51" class="form-html" data-component="text" tabindex="-1">
+            <p><strong><span style="font-size: 14pt;">Search for animal by veterinarian or owner</span></strong></p>
+            <p><span style="font-size: 12pt;">If an owner and/or animal isn't listed, you may enter them here with as much data as you have available.</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_radio" id="id_3"><label class="form-label form-label-left" id="label_3" aria-hidden="true"> Search by:<span class="form-required">*</span> </label>
+        <div id="cid_3" class="form-input jf-required" data-layout="full">
+          <div class="form-multiple-column" data-columncount="2" role="radiogroup" aria-labelledby="label_3" data-component="radio"><span class="form-radio-item"><span class="dragger-item"></span><input type="radio" class="form-radio validate[required]" id="input_3_0" name="q3_searchBy" required="" aria-labelledby="label_input_3_0" checked="" value="Veterinarian" /><label id="label_input_3_0" for="input_3_0">Veterinarian</label></span><span class="form-radio-item"><span class="dragger-item"></span><input type="radio" class="form-radio validate[required]" id="input_3_1" name="q3_searchBy" required="" aria-labelledby="label_input_3_1" value="Owner" /><label id="label_input_3_1" for="input_3_1">Owner</label></span></div>
+        </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_4"><label class="form-label form-label-left form-label-auto" id="label_4" for="input_4" aria-hidden="false"> Veterinarian: </label>
+        <div id="cid_4" class="form-input" data-layout="half"> <select class="form-dropdown" id="input_4" name="q4_veterinarian" style="width:310px" data-component="dropdown" aria-label="Veterinarian:">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_5"><label class="form-label form-label-left form-label-auto" id="label_5" for="input_5" aria-hidden="false"> Owner: </label>
+        <div id="cid_5" class="form-input" data-layout="half"> <select class="form-dropdown" id="input_5" name="q5_owner" style="width:310px" data-component="dropdown" aria-label="Owner:">
+            <option value="">Please Select</option>
+            <option value="(New Owner)">(New Owner)</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_40">
+        <div id="cid_40" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_40" class="form-html" data-component="text" tabindex="-1">
+            <p><span style="font-size: 14pt;"><strong>New owner information</strong></span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_6"><label class="form-label form-label-left form-label-auto" id="label_6" for="input_6" aria-hidden="false"> New owner name: </label>
+        <div id="cid_6" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_6" name="q6_newOwnerName" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_6" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_7"><label class="form-label form-label-left form-label-auto" id="label_7" for="input_7" aria-hidden="false"> Address 1: </label>
+        <div id="cid_7" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_7" name="q7_newOwnerAddress1" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_7" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_8"><label class="form-label form-label-left form-label-auto" id="label_8" for="input_8" aria-hidden="false"> Address 2: </label>
+        <div id="cid_8" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_8" name="q8_newOwnerAddress2" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_8" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_9"><label class="form-label form-label-left form-label-auto" id="label_9" for="input_9" aria-hidden="false"> City: </label>
+        <div id="cid_9" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_9" name="q9_newOwnerCity" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_9" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_11"><label class="form-label form-label-top" id="label_11" for="input_11" aria-hidden="false"> State: </label>
+        <div id="cid_11" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_11" name="q11_newOwnerState" style="width:310px" data-component="dropdown" aria-label="State:">
+            <option value="">Please Select</option>
+            <option value="Alabama">Alabama</option>
+            <option value="Alaska">Alaska</option>
+            <option value="Arizona">Arizona</option>
+            <option value="Arkansas">Arkansas</option>
+            <option value="California">California</option>
+            <option value="Colorado">Colorado</option>
+            <option value="Connecticut">Connecticut</option>
+            <option value="Delaware">Delaware</option>
+            <option value="District of Columbia">District of Columbia</option>
+            <option value="Florida">Florida</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Hawaii">Hawaii</option>
+            <option value="Idaho">Idaho</option>
+            <option value="Illinois">Illinois</option>
+            <option value="Indiana">Indiana</option>
+            <option value="Iowa">Iowa</option>
+            <option value="Kansas">Kansas</option>
+            <option value="Kentucky">Kentucky</option>
+            <option value="Louisiana">Louisiana</option>
+            <option value="Maine">Maine</option>
+            <option value="Maryland">Maryland</option>
+            <option value="Massachusetts">Massachusetts</option>
+            <option value="Michigan">Michigan</option>
+            <option value="Minnesota">Minnesota</option>
+            <option value="Mississippi">Mississippi</option>
+            <option value="Missouri">Missouri</option>
+            <option value="Montana">Montana</option>
+            <option value="Nebraska">Nebraska</option>
+            <option value="Nevada">Nevada</option>
+            <option value="New Hampshire">New Hampshire</option>
+            <option value="New Jersey">New Jersey</option>
+            <option value="New Mexico">New Mexico</option>
+            <option value="New York">New York</option>
+            <option value="North Carolina">North Carolina</option>
+            <option value="North Dakota">North Dakota</option>
+            <option value="Ohio">Ohio</option>
+            <option value="Oklahoma">Oklahoma</option>
+            <option value="Oregon">Oregon</option>
+            <option value="Pennsylvania">Pennsylvania</option>
+            <option value="Rhode Island">Rhode Island</option>
+            <option value="South Carolina">South Carolina</option>
+            <option value="South Dakota">South Dakota</option>
+            <option value="Tennessee">Tennessee</option>
+            <option value="Texas">Texas</option>
+            <option value="Utah">Utah</option>
+            <option value="Vermont">Vermont</option>
+            <option value="Virginia">Virginia</option>
+            <option value="Washington">Washington</option>
+            <option value="West Virginia">West Virginia</option>
+            <option value="Wisconsin">Wisconsin</option>
+            <option value="Wyoming">Wyoming</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_12"><label class="form-label form-label-top" id="label_12" for="input_12" aria-hidden="false"> ZIP: </label>
+        <div id="cid_12" class="form-input-wide always-hidden" data-layout="half"> <input type="text" id="input_12" name="q12_newOwnerZIP" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_12" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 always-hidden form-field-hidden" style="display:none;" data-type="control_phone" id="id_14"><label class="form-label form-label-top" id="label_14" for="input_14_full"> Phone: </label>
+        <div id="cid_14" class="form-input-wide always-hidden" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="tel" id="input_14_full" name="q14_newOwnerPhone[full]" data-type="mask-number" class="mask-phone-number form-textbox validate[Fill Mask]" data-defaultvalue="" autoComplete="section-input_14 tel-national" style="width:310px" data-masked="true" placeholder="(000) 000-0000" data-component="phone" aria-label="Phone:" aria-labelledby="label_14 input_14_full_label" value="" /></span><span id="input_14_full_label" style="border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;white-space:nowrap">Format: (000) 000-0000.</span> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4 always-hidden form-field-hidden" style="display:none;" data-type="control_email" id="id_15"><label class="form-label form-label-top" id="label_15" for="input_15" aria-hidden="false"> Email: </label>
+        <div id="cid_15" class="form-input-wide always-hidden" data-layout="half"> <span class="form-sub-label-container" style="vertical-align:top"><input type="email" id="input_15" name="q15_newOwnerEmail" class="form-textbox validate[Email]" data-defaultvalue="" autoComplete="section-input_15 email" style="width:310px" size="310" data-component="email" aria-labelledby="label_15 sublabel_input_15" value="" /><label class="form-sub-label" for="input_15" id="sublabel_input_15" style="min-height:13px">example@example.com</label></span> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_17"><label class="form-label form-label-left form-label-auto" id="label_17" for="input_17" aria-hidden="false"> Animal name:<span class="form-required">*</span> </label>
+        <div id="cid_17" class="form-input jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_17" name="q17_animalName" style="width:310px" data-component="dropdown" required="" aria-label="Animal name:">
+            <option value="">Please Select</option>
+            <option value="(New Animal)">(New Animal)</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_text" id="id_41">
+        <div id="cid_41" class="form-input-wide always-hidden" data-layout="full">
+          <div id="text_41" class="form-html" data-component="text" tabindex="-1">
+            <p><span style="font-size: 14pt;"><strong>New animal information</strong></span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_radio" id="id_19"><label class="form-label form-label-left form-label-auto" id="label_19" aria-hidden="true"> Animal type: </label>
+        <div id="cid_19" class="form-input always-hidden" data-layout="full">
+          <div class="form-multiple-column" data-columncount="2" role="radiogroup" aria-labelledby="label_19" data-component="radio"><span class="form-radio-item"><span class="dragger-item"></span><input type="radio" class="form-radio" id="input_19_0" name="q19_animalType" aria-labelledby="label_input_19_0" checked="" value="Equine" /><label id="label_input_19_0" for="input_19_0">Equine</label></span><span class="form-radio-item"><span class="dragger-item"></span><input type="radio" class="form-radio" id="input_19_1" name="q19_animalType" aria-labelledby="label_input_19_1" value="Canine" /><label id="label_input_19_1" for="input_19_1">Canine</label></span></div>
+        </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_18"><label class="form-label form-label-left form-label-auto" id="label_18" for="input_18" aria-hidden="false"> New animal name: </label>
+        <div id="cid_18" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_18" name="q18_newAnimalName" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_18" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_number" id="id_23"><label class="form-label form-label-left form-label-auto" id="label_23" for="input_23" aria-hidden="false"> Age: </label>
+        <div id="cid_23" class="form-input always-hidden" data-layout="half"> <input type="number" id="input_23" name="q23_newAnimalAge" data-type="input-number" class=" form-number-input form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="number" aria-labelledby="label_23" step="any" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_50"><label class="form-label form-label-left form-label-auto" id="label_50" for="input_50" aria-hidden="false"> Gender: </label>
+        <div id="cid_50" class="form-input always-hidden" data-layout="half"> <select class="form-dropdown" id="input_50" name="q50_gender" style="width:310px" data-component="dropdown" aria-label="Gender:">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_21"><label class="form-label form-label-left form-label-auto" id="label_21" for="input_21" aria-hidden="false"> Equine breed: </label>
+        <div id="cid_21" class="form-input always-hidden" data-layout="half"> <select class="form-dropdown" id="input_21" name="q21_newEquineBreed" style="width:310px" data-component="dropdown" aria-label="Equine breed:">
+            <option value="">Please Select</option>
+            <option value="Other">Other</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_24"><label class="form-label form-label-left form-label-auto" id="label_24" for="input_24" aria-hidden="false"> Other equine breed: </label>
+        <div id="cid_24" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_24" name="q24_newOtherEquineBreed" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_24" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textbox" id="id_22"><label class="form-label form-label-left form-label-auto" id="label_22" for="input_22" aria-hidden="false"> Canine breed: </label>
+        <div id="cid_22" class="form-input always-hidden" data-layout="half"> <input type="text" id="input_22" name="q22_newCanineBreed" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" data-component="textbox" aria-labelledby="label_22" value="" /> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_77"><label class="form-label form-label-left form-label-auto" id="label_77" for="input_77" aria-hidden="false"> Equine discipline(s): </label>
+        <div id="cid_77" class="form-input always-hidden" data-layout="half"> <select class="form-dropdown" id="input_77" name="q77_newEquineDisciplines[]" style="width:310px" multiple="" size="6" data-component="dropdown" aria-label="Equine discipline(s):">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_52">
+        <div id="cid_52" class="form-input-wide" data-layout="full">
+          <div class="divider" data-component="divider" style="border-bottom-width:1px;border-bottom-style:solid;border-color:#e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px"></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_30">
+        <div id="cid_30" class="form-input-wide" data-layout="full">
+          <div id="text_30" class="form-html" data-component="text" tabindex="-1">
+            <p><strong><span style="font-size: 14pt;">Pre-injection observation</span></strong></p>
+            <p><span style="font-size: 12pt;">Enter any observational data gathered prior to the TropoFlex™ injection. You may also upload up to 25 MB of photos, videos, PDFs, or other documents.</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_28"><label class="form-label form-label-left form-label-auto" id="label_28" for="input_28" aria-hidden="false"> Is this a new injection?<span class="form-required">*</span> </label>
+        <div id="cid_28" class="form-input jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_28" name="q28_isNewInjection" style="width:310px" data-component="dropdown" required="" aria-label="Is this a new injection?">
+            <option value="">Please Select</option>
+            <option value="Yes" selected="">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_datetime" id="id_26"><label class="form-label form-label-left form-label-auto" id="label_26" for="lite_mode_26" aria-hidden="false"> Injection date:<span class="form-required">*</span> </label>
+        <div id="cid_26" class="form-input jf-required" data-layout="half">
+          <div data-wrapper-react="true">
+            <div style="display:none"><span class="form-sub-label-container" style="vertical-align:top"><input class="form-textbox validate[required, limitDate]" id="month_26" name="q26_injectionDate[month]" type="tel" size="2" data-maxlength="2" data-age="" maxLength="2" required="" autoComplete="off" aria-labelledby="label_26 sublabel_26_month" value="" /><span class="date-separate" aria-hidden="true"> /</span><label class="form-sub-label" for="month_26" id="sublabel_26_month" style="min-height:13px">Month</label></span><span class="form-sub-label-container" style="vertical-align:top"><input class="form-textbox validate[required, limitDate]" id="day_26" name="q26_injectionDate[day]" type="tel" size="2" data-maxlength="2" data-age="" maxLength="2" required="" autoComplete="off" aria-labelledby="label_26 sublabel_26_day" value="" /><span class="date-separate" aria-hidden="true"> /</span><label class="form-sub-label" for="day_26" id="sublabel_26_day" style="min-height:13px">Day</label></span><span class="form-sub-label-container" style="vertical-align:top"><input class="form-textbox validate[required, limitDate]" id="year_26" name="q26_injectionDate[year]" type="tel" size="4" data-maxlength="4" data-age="" maxLength="4" required="" autoComplete="off" aria-labelledby="label_26 sublabel_26_year" value="" /><label class="form-sub-label" for="year_26" id="sublabel_26_year" style="min-height:13px">Year</label></span></div><span class="form-sub-label-container" style="vertical-align:top"><input class="form-textbox validate[required, limitDate, validateLiteDate]" id="lite_mode_26" type="text" size="12" data-maxlength="12" maxLength="12" data-age="" required="" data-format="mmddyyyy" data-seperator="/" placeholder="MM/DD/YYYY" data-placeholder="MM/DD/YYYY" autoComplete="off" aria-labelledby="label_26" value="" /><button type="button" class=" newDefaultTheme-dateIcon focusable icon-liteMode" id="input_26_pick" data-component="datetime" aria-label="Choose date" data-allow-time="No" data-version="v2"></button><label class="form-sub-label is-empty" for="lite_mode_26" id="sublabel_26_litemode" style="min-height:13px"></label></span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_dropdown" id="id_31"><label class="form-label form-label-top" id="label_31" for="input_31" aria-hidden="false"> Tissue type:<span class="form-required">*</span> </label>
+        <div id="cid_31" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_31" name="q31_tissueType" style="width:310px" data-component="dropdown" required="" aria-label="Tissue type:">
+            <option value="">Please Select</option>
+            <option value="Area">Area</option>
+            <option value="Joint">Joint</option>
+            <option value="Ligament">Ligament</option>
+            <option value="Soft Tissue">Soft Tissue</option>
+            <option value="Tendon">Tendon</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_32"><label class="form-label form-label-top" id="label_32" for="input_32" aria-hidden="false"> Lameness score: </label>
+        <div id="cid_32" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_32" name="q32_lamenessScore" style="width:310px" data-component="dropdown" aria-label="Lameness score:">
+            <option value="">Please Select</option>
+            <option value="0">0</option>
+            <option value="0.5">0.5</option>
+            <option value="1">1</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
+            <option value="3">3</option>
+            <option value="3.5">3.5</option>
+            <option value="4">4</option>
+            <option value="4.5">4.5</option>
+            <option value="5">5</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3 always-hidden form-field-hidden" style="display:none;" data-type="control_dropdown" id="id_34"><label class="form-label form-label-top" id="label_34" for="input_34" aria-hidden="false"> Inflammation %: </label>
+        <div id="cid_34" class="form-input-wide always-hidden" data-layout="half"> <select class="form-dropdown" id="input_34" name="q34_inflammationPercentage" style="width:310px" data-component="dropdown" aria-label="Inflammation %:">
+            <option value="">Please Select</option>
+            <option value="0%">0%</option>
+            <option value="5%">5%</option>
+            <option value="10%">10%</option>
+            <option value="15%">15%</option>
+            <option value="20%">20%</option>
+            <option value="25%">25%</option>
+            <option value="30%">30%</option>
+            <option value="35%">35%</option>
+            <option value="40%">40%</option>
+            <option value="45%">45%</option>
+            <option value="50%">50%</option>
+            <option value="55%">55%</option>
+            <option value="60%">60%</option>
+            <option value="65%">65%</option>
+            <option value="70%">70%</option>
+            <option value="75%">75%</option>
+            <option value="80%">80%</option>
+            <option value="85%">85%</option>
+            <option value="90%">90%</option>
+            <option value="95%">95%</option>
+            <option value="100%">100%</option>
+          </select> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_textarea" id="id_35"><label class="form-label form-label-left form-label-auto" id="label_35" for="input_35" aria-hidden="false"> Observation:<span class="form-required">*</span> </label>
+        <div id="cid_35" class="form-input jf-required" data-layout="full"> <textarea id="input_35" class="form-textarea validate[required]" name="q35_preInjectionObservation" style="width:648px;height:163px" data-component="textarea" required="" aria-labelledby="label_35"></textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_36"><label class="form-label form-label-left form-label-auto" id="label_36" for="input_36" aria-hidden="false"> Diagnosis: </label>
+        <div id="cid_36" class="form-input" data-layout="full"> <textarea id="input_36" class="form-textarea" name="q36_diagnosis" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_36"></textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_37"><label class="form-label form-label-left form-label-auto" id="label_37" for="input_37" aria-hidden="false"> Treatment: </label>
+        <div id="cid_37" class="form-input" data-layout="full"> <textarea id="input_37" class="form-textarea" name="q37_treatment" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_37"></textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_checkbox" id="id_38"><label class="form-label form-label-left form-label-auto" id="label_38" aria-hidden="true"> Imaging type(s): </label>
+        <div id="cid_38" class="form-input" data-layout="full">
+          <div class="form-multiple-column" data-columncount="2" role="group" aria-labelledby="label_38" data-component="checkbox"><span class="form-checkbox-item"><span class="dragger-item"></span><input type="checkbox" class="form-checkbox" id="input_38_0" name="q38_imagingTypes[]" aria-labelledby="label_input_38_0" value="X-ray" /><label id="label_input_38_0" for="input_38_0">X-ray</label></span><span class="form-checkbox-item"><span class="dragger-item"></span><input type="checkbox" class="form-checkbox" id="input_38_1" name="q38_imagingTypes[]" aria-labelledby="label_input_38_1" value="MRI" /><label id="label_input_38_1" for="input_38_1">MRI</label></span><span class="form-checkbox-item" style="clear:left"><span class="dragger-item"></span><input type="checkbox" class="form-checkbox" id="input_38_2" name="q38_imagingTypes[]" aria-labelledby="label_input_38_2" value="Ultrasound" /><label id="label_input_38_2" for="input_38_2">Ultrasound</label></span><span class="form-checkbox-item"><span class="dragger-item"></span><input type="checkbox" class="form-checkbox" id="input_38_3" name="q38_imagingTypes[]" aria-labelledby="label_input_38_3" value="CT" /><label id="label_input_38_3" for="input_38_3">CT</label></span></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_fileupload" id="id_42"><label class="form-label form-label-left form-label-auto" id="label_42" for="input_42" aria-hidden="false"> File upload(s): </label>
+        <div id="cid_42" class="form-input" data-layout="full">
+          <div class="jfQuestion-fields" data-wrapper-react="true">
+            <div class="jfField isFilled">
+              <div class="jfUpload-wrapper">
+                <div class="jfUpload-container">
+                  <div class="jfUpload-button-container">
+                    <div class="jfUpload-button" aria-hidden="true" tabindex="0" style="display:none" data-version="v2">Browse Files<div class="jfUpload-heading forDesktop">Drag and drop files here</div>
+                      <div class="jfUpload-heading forMobile">Choose a file</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="jfUpload-files-container">
+                  <div class="validate[multipleUpload]"><input type="file" id="input_42" name="q42_fileUploads[]" multiple="" class="form-upload-multiple" data-imagevalidate="yes" data-file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" data-limit-file-size="Yes" data-file-maxsize="25000" data-file-minsize="0" data-file-limit="" data-component="fileupload" aria-label="Browse Files" /></div>
+                </div>
+              </div><span class="form-sub-label-container" style="vertical-align:top"><label class="form-sub-label" for="input_42" id="sublabel_input_42" style="min-height:13px">Maximum 25 MB for all uploaded files</label></span>
+            </div><span style="display:none" class="cancelText">Cancel</span><span style="display:none" class="ofText">of</span>
+          </div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_53">
+        <div id="cid_53" class="form-input-wide" data-layout="full">
+          <div class="divider" data-component="divider" style="border-bottom-width:1px;border-bottom-style:solid;border-color:#e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px"></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_43">
+        <div id="cid_43" class="form-input-wide" data-layout="full">
+          <div id="text_43" class="form-html" data-component="text" tabindex="-1">
+            <p><span style="font-size: 14pt;"><strong>Injection detail</strong></span></p>
+            <p><span style="font-size: 12pt;">Record the injection sites and dosages (in mL) of TropoFlex™ administered in each site.</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1 jf-required" data-type="control_dropdown" id="id_45"><label class="form-label form-label-top" id="label_45" for="input_45" aria-hidden="false"> Pain medication:<span class="form-required">*</span> </label>
+        <div id="cid_45" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_45" name="q45_painMedication" style="width:310px" data-component="dropdown" required="" aria-label="Pain medication:">
+            <option value="">Please Select</option>
+            <option value="Aantadine">Aantadine</option>
+            <option value="Acepromazine">Acepromazine</option>
+            <option value="Banamine®">Banamine®</option>
+            <option value="Butorphanol">Butorphanol</option>
+            <option value="Carprofen (Rimadyl, Novox, Quellin)">Carprofen (Rimadyl, Novox, Quellin)</option>
+            <option value="Deracoxib (Deramaxx)">Deracoxib (Deramaxx)</option>
+            <option value="Detomidine">Detomidine</option>
+            <option value="Firocoxib (Previcox)">Firocoxib (Previcox)</option>
+            <option value="Gabapentin">Gabapentin</option>
+            <option value="Grapiprant (Galliprant)">Grapiprant (Galliprant)</option>
+            <option value="Meloxicam (Metacam)">Meloxicam (Metacam)</option>
+            <option value="Romifidine">Romifidine</option>
+            <option value="Xylazine">Xylazine</option>
+            <option value="Combination">Combination</option>
+            <option value="Other">Other</option>
+            <option value="None">None</option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2 jf-required" data-type="control_dropdown" id="id_46"><label class="form-label form-label-top" id="label_46" for="input_46" aria-hidden="false"> Topical:<span class="form-required">*</span> </label>
+        <div id="cid_46" class="form-input-wide jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_46" name="q46_topical" style="width:310px" data-component="dropdown" required="" aria-label="Topical:">
+            <option value="">Please Select</option>
+            <option value="Surpass Topical Cream">Surpass Topical Cream</option>
+            <option value="Bute Phenylbutazone">Bute Phenylbutazone</option>
+            <option value="Banamine®">Banamine®</option>
+            <option value="None">None</option>
+          </select> </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_59">
+        <div id="cid_59" class="form-input-wide" data-layout="full">
+          <div id="text_59" class="form-html" data-component="text" tabindex="-1">
+            <p><span style="font-size: 12pt;">Enter up to 8 injection sites and the dosage of TropoFlex™ administered.</span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line form-line-column form-col-1" data-type="control_dropdown" id="id_54"><label class="form-label form-label-top" id="label_54" for="injectionSite1" aria-hidden="false"> Injection site 1 </label>
+        <div id="cid_54" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite1" name="q54_injectionSite1" style="width:310px" data-component="dropdown" aria-label="Injection site 1">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-2" data-type="control_textbox" id="id_58"><label class="form-label form-label-top" id="label_58" for="dosage1" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_58" class="form-input-wide" data-layout="half"> <input type="text" id="dosage1" name="q58_dosage1" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_58" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-3" data-type="control_dropdown" id="id_60"><label class="form-label form-label-top" id="label_60" for="injectionSite2" aria-hidden="false"> Injection site 2 </label>
+        <div id="cid_60" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite2" name="q60_injectionSite2" style="width:310px" data-component="dropdown" aria-label="Injection site 2">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-4" data-type="control_textbox" id="id_61"><label class="form-label form-label-top" id="label_61" for="dosage2" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_61" class="form-input-wide" data-layout="half"> <input type="text" id="dosage2" name="q61_dosage2" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_61" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-5" data-type="control_dropdown" id="id_62"><label class="form-label form-label-top" id="label_62" for="injectionSite3" aria-hidden="false"> Injection site 3 </label>
+        <div id="cid_62" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite3" name="q62_injectionSite3" style="width:310px" data-component="dropdown" aria-label="Injection site 3">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-6" data-type="control_textbox" id="id_63"><label class="form-label form-label-top" id="label_63" for="dosage3" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_63" class="form-input-wide" data-layout="half"> <input type="text" id="dosage3" name="q63_dosage3" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_63" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-7" data-type="control_dropdown" id="id_64"><label class="form-label form-label-top" id="label_64" for="injectionSite4" aria-hidden="false"> Injection site 4 </label>
+        <div id="cid_64" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite4" name="q64_injectionSite4" style="width:310px" data-component="dropdown" aria-label="Injection site 4">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-8" data-type="control_textbox" id="id_65"><label class="form-label form-label-top" id="label_65" for="dosage4" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_65" class="form-input-wide" data-layout="half"> <input type="text" id="dosage4" name="q65_dosage4" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_65" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-9" data-type="control_dropdown" id="id_66"><label class="form-label form-label-top" id="label_66" for="injectionSite5" aria-hidden="false"> Injection site 5 </label>
+        <div id="cid_66" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite5" name="q66_injectionSite5" style="width:310px" data-component="dropdown" aria-label="Injection site 5">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-10" data-type="control_textbox" id="id_67"><label class="form-label form-label-top" id="label_67" for="dosage5" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_67" class="form-input-wide" data-layout="half"> <input type="text" id="dosage5" name="q67_dosage5" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_67" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-11" data-type="control_dropdown" id="id_68"><label class="form-label form-label-top" id="label_68" for="injectionSite6" aria-hidden="false"> Injection site 6 </label>
+        <div id="cid_68" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite6" name="q68_injectionSite6" style="width:310px" data-component="dropdown" aria-label="Injection site 6">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-12" data-type="control_textbox" id="id_69"><label class="form-label form-label-top" id="label_69" for="dosage6" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_69" class="form-input-wide" data-layout="half"> <input type="text" id="dosage6" name="q69_dosage6" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_69" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-13" data-type="control_dropdown" id="id_70"><label class="form-label form-label-top" id="label_70" for="injectionSite7" aria-hidden="false"> Injection site 7 </label>
+        <div id="cid_70" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite7" name="q70_injectionSite7" style="width:310px" data-component="dropdown" aria-label="Injection site 7">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-14" data-type="control_textbox" id="id_71"><label class="form-label form-label-top" id="label_71" for="dosage7" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_71" class="form-input-wide" data-layout="half"> <input type="text" id="dosage7" name="q71_dosage7" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_71" value="" /> </div>
+      </li>
+      <li class="form-line form-line-column form-col-15" data-type="control_dropdown" id="id_72"><label class="form-label form-label-top" id="label_72" for="injectionSite8" aria-hidden="false"> Injection site 8 </label>
+        <div id="cid_72" class="form-input-wide" data-layout="half"> <select class="form-dropdown" id="injectionSite8" name="q72_injectionSite8" style="width:310px" data-component="dropdown" aria-label="Injection site 8">
+            <option value="">Please Select</option>
+            <option value=""></option>
+          </select> </div>
+      </li>
+      <li class="form-line form-line-column form-col-16" data-type="control_textbox" id="id_73"><label class="form-label form-label-top" id="label_73" for="dosage8" aria-hidden="false"> Dosage (mL) </label>
+        <div id="cid_73" class="form-input-wide" data-layout="half"> <input type="text" id="dosage8" name="q73_dosage8" data-type="input-textbox" class="form-textbox" data-defaultvalue="" style="width:310px" size="310" placeholder="Dosage (mL)" data-component="textbox" aria-labelledby="label_73" value="" /> </div>
+      </li>
+      <li class="form-line" data-type="control_divider" id="id_76">
+        <div id="cid_76" class="form-input-wide" data-layout="full">
+          <div class="divider" data-component="divider" style="border-bottom-width:1px;border-bottom-style:solid;border-color:#e6e6e6;height:1px;margin-left:0px;margin-right:0px;margin-top:5px;margin-bottom:5px"></div>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_text" id="id_74">
+        <div id="cid_74" class="form-input-wide" data-layout="full">
+          <div id="text_74" class="form-html" data-component="text" tabindex="-1">
+            <p><span style="font-size: 14pt;"><strong>Post-injection observation</strong></span></p>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_47"><label class="form-label form-label-left form-label-auto" id="label_47" for="input_47" aria-hidden="false"> Was there an adverse reaction?<span class="form-required">*</span> </label>
+        <div id="cid_47" class="form-input jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_47" name="q47_wasThere" style="width:310px" data-component="dropdown" required="" aria-label="Was there an adverse reaction?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_48"><label class="form-label form-label-left form-label-auto" id="label_48" for="input_48" aria-hidden="false"> Was there a post-injection observation?<span class="form-required">*</span> </label>
+        <div id="cid_48" class="form-input jf-required" data-layout="half"> <select class="form-dropdown validate[required]" id="input_48" name="q48_hasPostinjectionObservation" style="width:310px" data-component="dropdown" required="" aria-label="Was there a post-injection observation?">
+            <option value="">Please Select</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select> </div>
+      </li>
+      <li class="form-line always-hidden form-field-hidden" style="display:none;" data-type="control_textarea" id="id_49"><label class="form-label form-label-left form-label-auto" id="label_49" for="input_49" aria-hidden="false"> Observation: </label>
+        <div id="cid_49" class="form-input always-hidden" data-layout="full"> <textarea id="input_49" class="form-textarea" name="q49_postInjectionObservation" style="width:648px;height:163px" data-component="textarea" aria-labelledby="label_49"></textarea> </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide" data-layout="full">
+          <div data-align="auto" class="form-buttons-wrapper form-buttons-auto   jsTest-button-wrapperField"><button id="input_2" type="submit" class="form-submit-button submit-button jf-form-buttons jsTest-submitField legacy-submit" data-component="button" data-content="">Submit</button></div>
+        </div>
+      </li>
+      <li style="display:none">Should be Empty: <input type="text" name="website" value="" type="hidden" /></li>
+    </ul>
+  </div>
+  <script>
+    JotForm.showJotFormPowered = "0";
+  </script>
+  <script>
+    JotForm.poweredByText = "Powered by Jotform";
+  </script><input type="hidden" class="simple_spc" id="simple_spc" name="simple_spc" value="260768904551060" />
+  <script type="text/javascript">
+    var all_spc = document.querySelectorAll("form[id='260768904551060'] .si" + "mple" + "_spc");
+    for (var i = 0; i < all_spc.length; i++)
+    {
+      all_spc[i].value = "260768904551060-260768904551060";
+    }
+  </script>
+</form>
+<div id="sr-status-message" class="sr-only" role="status" aria-live="polite" style="font-size: 0;"></div>
+<link id=color-scheme-style href="https://cdn.jotfor.ms/stylebuilder/static/color-scheme.css?v=4.1.63300" type="text/css" rel="stylesheet" /><script type="text/javascript">JotForm.ownerView=true;</script><script type="text/javascript">JotForm.isNewSACL=true;</script>
+
+   
+</body>
+</html>
