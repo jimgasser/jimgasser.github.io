@@ -69,25 +69,9 @@ async function getInjections(animalID) {
         let option = document.createElement('option');
         option.value = injection.InjectionID;
         option.text = injection.InjectionDate;
+        option.setAttribute("data-casestudyid", injection.CaseStudyID);
         myInjection.add(option)
     });    
-}
-
-async function submitObservation() {
-    const formData = {
-        "animalId": myAnimal.value,
-        "injectionId": myInjection.value,
-        "observationDate": document.getElementById('lite_mode_26').value,
-        "observerName": document.getElementById('input_81').value,
-        "observerType": document.getElementById('input_80').value,
-        "observerTypeOther": document.getElementById('input_82').value,
-        "lamenessScore": document.getElementById('input_32').value,
-        "behavior": document.getElementById('input_83').value,
-        "observedTraits": document.querySelectorAll('input[name="q84_traits[]"]:checked').values(),
-        "observation": document.getElementById('input_35').value,
-        "notables": document.getElementById('input_37').value
-    };
-    const response = await getSharePointListData(paFlowSubmit, formData);
 }
 
 myVet.addEventListener('change', (event) => {
@@ -102,16 +86,9 @@ myAnimal.addEventListener('change', (event) => {
     getInjections(parseInt(myAnimal.value));
 })
 
-mySubmit.addEventListener('click', (event) => {
-    let allValid = true;
-    document.querySelectorAll('.form-textbox, .form-dropdown').forEach(field => {
-        if (field.hasAttribute('required') && !field.value) {
-            allValid = false;
-        }
-    })
-    if (allValid) {
-         submitObservation();
-    }
+myInjection.addEventListener('change', (event) => {
+    const caseStudyID = document.getElementById('input_87');
+    caseStudyID.value = event.target.selectedOptions[0].getAttribute('data-casestudyid');
 })
 
 getVets();
