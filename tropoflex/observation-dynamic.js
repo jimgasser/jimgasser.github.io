@@ -3,11 +3,13 @@ const myVet = document.getElementById("input_4");
 const myOwner = document.getElementById("input_5");
 const myAnimal = document.getElementById("input_17");
 const myInjection = document.getElementById("input_86");
+const mySubmit = document.getElementById("input_2");
 
 const paFlowUrlVets = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/d46af86d45054d7dab80b0f695c0177e/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=i_QPUg80RYYFshg0tOjPED_jbrv9CAfoN5y4zk39xks';
 const paFlowUrlOwners = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/08a3dddda77c4862b22f98e7a6b7d538/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=97vClsSpKD8yuIhcSjfOWCpWTKmP_oSou0UWQBoRX4w';
 const paFlowUrlAnimals = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/84edcf11f2694dbaa19fd51c193f4cd3/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=pOMR8KdA8_5wLcSZTQ7iPHWneNwLo-XSm_fZ6_-h1go';
 const paFlowInjections = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/57b0d6ac7a414e3c827009296e8bdff4/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=SitR2IGRuSoD5EnZr4hF5_19PbwbPv3felQ1DnfHsds';
+const paFlowSubmit = 'https://default2ca302b2fd4a4e6a89f3ac4c6dcf2a.85.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/93dd76406c1f49b38f234da907ad3a87/triggers/manual/paths/invoke?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=BMkIt-BG7NteeiDES1YJR8W9F_9L1YbEyeFbgLnv9Nk';
 
 async function getSharePointListData(thisUrl, thisBody) {
     try {
@@ -71,6 +73,23 @@ async function getInjections(animalID) {
     });    
 }
 
+async function submitObservation() {
+    const formData = {
+        "animalId": myAnimal.value,
+        "injectionId": myInjection.value,
+        "observationDate": document.getElementById('lite_mode_26').value,
+        "observerName": document.getElementById('input_81').value,
+        "observerType": document.getElementById('input_80').value,
+        "observerTypeOther": document.getElementById('input_82').value,
+        "lamenessScore": document.getElementById('input_32').value,
+        "behavior": document.getElementById('input_83').value,
+        "observedTraits": document.querySelectorAll('input[name="q84_traits[]"]:checked').values(),
+        "observation": document.getElementById('input_35').value,
+        "notables": document.getElementById('input_37').value
+    };
+    const response = await getSharePointListData(paFlowSubmit, formData);
+}
+
 myVet.addEventListener('change', (event) => {
     getAnimals('vet', parseInt(myVet.value));
 })
@@ -81,6 +100,18 @@ myOwner.addEventListener('change', (event) => {
 
 myAnimal.addEventListener('change', (event) => {
     getInjections(parseInt(myAnimal.value));
+})
+
+mySubmit.addEventListener('click', (event) => {
+    let allValid = true;
+    document.querySelectorAll('.form-textbox, .form-dropdown').forEach(field => {
+        if (field.hasAttribute('required') && !field.value) {
+            allValid = false;
+        }
+    })
+    if (allValid) {
+         submitObservation();
+    }
 })
 
 getVets();
